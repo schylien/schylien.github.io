@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Asking a Date </title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+              h1 {
+                font-size: 300%;
+              }
+              h2 {
+                color: black;
+              }
+              
+              /* HEADER */
+              
+              header {
+                height: 170px;
+                padding: 0px;
+                text-align: center;
+              }
+              
+              header a {
+                color: black;
+                background: darkgray;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-top: 40px;
+              }
+              
+              nav ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+              }
+              
+              nav li {
+                display: inline-block;
+                margin-right: 20px;
+              }
+              
+              footer {
+                background: black;
+                color: gray;
+                font-size: 25px;
+                padding: 20px 20px;
+                text-align: center;
+              }
+        </style>
+    </head>
+    
+<body> 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="PlaceToGo.html">Place To Go</a></li>
+                <li><a href="yes.html">yeaa?</a> </li>
+            </ul>
+        </nav>
+        <h1> Hello, Amandania Putri Naila </h1>
+    </header>
+   
+    <head>
+
+        
+    </head> 
+    <section>
+        <div class="container">
+            <div >
+                <h2 class = "header_text">Do you wanna go out with me?</h2>
+                <h2 class = "header_text">Are you free?</h2>
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yees.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </section>
+</html>
+
+</body> 
